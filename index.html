@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/components/hero.css" />
+    <link rel="stylesheet" href="./styles/components/pricing.css" />
+    <link rel="stylesheet" href="./styles/components/about.css" />
+    <link rel="stylesheet" href="./styles/components/testimonial.css" />
+    <link rel="stylesheet" href="./styles/components/features.css" />
+    <link rel="stylesheet" href="./styles/components/faq.css" />
+    <link rel="stylesheet" href="./styles/components/cta.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+
+    <!-- icons cdn link-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+
+    <title>Final Project</title>
+    <script src="./src/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__title-container">
+        <img
+          src="./public/logo.png"
+          alt="old woman holding a cup"
+          width="720"
+          height="972"
+          class="header__logo"
+        />
+        <span class="header__title">Slaying The Dragon</span>
+      </div>
+
+      <button id="bars-btn" class="header__bars" aria-label="menu button">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <nav class="header__menu">
+        <div class="header__social-container">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="github"
+            aria-label="github link"
+            ><i aria-hidden="true" class="lni lni-github"></i
+          ></a>
+          <a
+            href="https://discord.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="discord"
+            aria-label="discord link"
+            ><i aria-hidden="true" class="lni lni-discord"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="youtube"
+            aria-label="youtube link"
+            ><i aria-hidden="true" class="lni lni-youtube"></i
+          ></a>
+        </div>
+        <div class="header__separator"></div>
+        <a href="#" class="header__sign-in-btn">Sign in</a>
+        <a href="#" class="btn header__enter-app-btn"
+          >Enter app
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="header__enter-app-btn__arrow"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- mobile navigation -->
+
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="mobile-nav__close-btn" id="close-btn">Close</button>
+      <img
+        src="./public/logo.png"
+        alt="old woman holding a cup"
+        width="720"
+        height="972"
+        class="mobile-nav__logo"
+      />
+      <div class="mobile-nav__social-container">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="github"
+          aria-label="github link"
+          ><i aria-hidden="true" class="lni lni-github"></i
+        ></a>
+        <a
+          href="https://discord.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="discord"
+          aria-label="discord link"
+          ><i aria-hidden="true" class="lni lni-discord"></i
+        ></a>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="youtube"
+          aria-label="youtube link"
+          ><i aria-hidden="true" class="lni lni-youtube"></i
+        ></a>
+      </div>
+      <div class="mobile-nav__separator"></div>
+      <a href="#" class="mobile-nav__sign-in-btn">Sign in</a>
+      <a href="#" class="btn mobile-nav__enter-app-btn"
+        >Enter app
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile-nav__enter-app-btn__arrow"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </a>
+    </div>
+    <main>
+      <section class="hero container">
+        <img
+          class="hero__img"
+          src="./public/hero.png"
+          alt="a guy on a wheelchair waving"
+          width="1386"
+          height="1809"
+        />
+        <h1 class="hero__title">
+          Become the web developer <br class="hero__br" />you were always
+          destined to be.
+        </h1>
+        <p class="hero__description1">
+          Slaying the dragon is about facing your fears, pursuing meaning and
+          transforming into the web developer you were always destined to be.
+        </p>
+        <p class="hero__description2">
+          Here you will start your journey, it will not be easy - you will
+          suffer - but you will go all the way. Slaying The Dragon is a learning
+          platform for the bravest adventurer aspiring to defeat the biggest
+          dragon of all - web development.
+          <strong>I currently offer a CSS course</strong> and
+          <strong>a JS course</strong>, with plans to release more courses soon,
+          including <strong>DSA - ReactJS - NextJS</strong> and more. You have
+          decided upon your purpose - <strong>you will slay the dragon.</strong>
+        </p>
+        <a href="#" class="hero__btn btn">Preview css course</a>
+      </section>
+      <section class="pricing container section">
+        <h1 class="title">Courses</h1>
+        <div class="pricing__box-container">
+          <div class="pricing__box pricing__box-0margin pricing__box-css">
+            <div>
+              <h3 class="pricing__title">CSS</h3>
+              <p class="pricing__description1">
+                The Complete Cascading Stylesheet course
+              </p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                CSS (Cascading Style Sheets) is a stylesheet language
+                responsible for the styling of your web page. It is used to
+                express how HTML elements are styled.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box-js">
+            <div>
+              <h3 class="pricing__title">JavaScript</h3>
+              <p class="pricing__description1">
+                The Complete JavaScript course
+              </p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                JS (JavaScript) is one of the most widely used programming
+                languages in the world. It allows us to add interactivity to our
+                web pages but can also be used to build web, mobile and desktop
+                apps, real-time networking apps, command-line tools, games and
+                more.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box-next">
+            <div>
+              <h3 class="pricing__title">ReactJS</h3>
+              <p class="pricing__description1">The Complete ReactJS course</p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                ReactJS (A JavaScript library for building user interfaces) is
+                an open-source, declarative and component-based javascript
+                library. It is the most popular Javascript front-end
+                library/framework and is widely used to build single page
+                application and user interfaces.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box-react">
+            <div>
+              <h3 class="pricing__title">NextJS</h3>
+              <p class="pricing__description1">The Complete NextJS course</p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                NextJS (The React framework for production) is a React framework
+                with all the features you need for production - hybrid, static &
+                server rendering, TypeScript support, smart bundling, route
+                pre-fetching, and more. No config needed and great developer
+                experience.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about container section">
+        <h2 class="title">About</h2>
+        <div class="about__container">
+          <div class="about__item1">
+            <h2 class="about__title">Slaying The Dragon</h2>
+            <p class="about__description1">
+              I started my YouTube channel back in November of 2022 with little
+              to no expectations and within only a few weeks I was overwhelmed
+              by the love and support I got from new viewers and subscribers. I
+              am infinitely grateful to each and everyone one of you - I am
+              absolutely honored by this community.
+            </p>
+            <p class="about__description2">
+              Your support and encouragement has been instrumental in helping me
+              to grow as a content creator and to keep pushing myself to create
+              better and more engaging videos. Whether you've been with me from
+              the beginning or just recently discovered my channel, please know
+              that I appreciate you and I am committed to continuing to provide
+              you with high-quality content that you will enjoy. Thank you again
+              for your support, and I can't wait to see what the future holds
+              for our community!
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="about__btn btn"
+              >Join the Discord<i
+                aria-hidden="true"
+                class="lni lni-discord about__btn-discord"
+              ></i
+            ></a>
+          </div>
+          <div class="about__item2">
+            <div>
+              <h3 class="about__label">Channel Total Subscribers</h3>
+              <p class="about__stat">
+                141,000<span class="about__stat-span">+ subs</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel Total Views</h3>
+              <p class="about__stat">
+                6,000,000<span class="about__stat-span">+ views</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel Total amount Watch Hours</h3>
+              <p class="about__stat">
+                333,000<span class="about__stat-span">+ watch hours</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel Total Video Uploaded</h3>
+              <p class="about__stat">
+                17<span class="about__stat-span">+ videos uploaded</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial container section">
+        <h2 class="title">Love & Support</h2>
+        <h2 class="testimonial__title">Testimonials</h2>
+        <p class="testimonial__description">
+          Esse nulla pariatur culpa veniam adipisicing id aliquip aliqua do nisi
+          velit minim ut ad. Amet ut consequat ullamco eu labore aute.
+        </p>
+        <div class="testimonial__container">
+          <div class="testimonial__box testimonial__box-0margin">
+            <p class="testimonial__comment">
+              Ex amet ullamco cillum aute sit sunt commodo ea laboris.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Sunt excepteur consectetur eu in est proident tempor proident
+              magna ullamco laborum proident et mollit.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Id voluptate amet exercitation eiusmod.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Ea laboris laborum occaecat sunt adipisicing adipisicing ipsum qui
+              aliqua.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Eu consectetur sunt culpa anim elit nisi labore laboris quis
+              deserunt deserunt deserunt culpa et.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Fugiat dolor dolor cillum dolore.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+        </div>
+      </section>
+      <section class="features container section">
+        <h2 class="title">Features</h2>
+        <div class="features__container">
+          <div class="features__content">
+            <h2 class="features__title">A better way to learn</h2>
+            <p class="features__description">
+              Irure pariatur ex officia dolore culpa magna duis.Occaecat sit do
+              dolor consectetur est pariatur quis duis eu.Ipsum elit non et
+              velit consequat Lorem cillum. Adipisicing mollit enim sit
+              incididunt velit adipisicing ipsum nostrud ipsum.
+            </p>
+          </div>
+          <div class="features__grid">
+            <div class="features__box features__box-0margin">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7023 4.05965C11.8923 3.97751 12.1077 3.97751 12.2977 4.05965L21.5477 8.05965C21.8222 8.17838 22 8.44891 22 8.74805V15.4688C22 15.883 21.6642 16.2188 21.25 16.2188C20.8358 16.2188 20.5 15.883 20.5 15.4688V9.88949L12.2977 13.4355C12.1077 13.5177 11.8923 13.5177 11.7023 13.4355L2.45233 9.43555C2.17795 9.31675 2 9.04707 2 8.74805C2 8.44891 2.17775 8.17838 2.45232 8.05965L11.7023 4.05965Z"
+                    fill="#323544"
+                  />
+                  <path
+                    d="M5.125 11.6808V16.6758C5.125 16.8216 5.16749 16.9642 5.24727 17.0862C5.24727 17.0862 5.24694 17.0857 5.24814 17.0875L5.2492 17.0892L5.25188 17.0932L5.25947 17.1045C5.26553 17.1135 5.27359 17.1252 5.28365 17.1396C5.30378 17.1684 5.33196 17.2076 5.36827 17.2558C5.44085 17.3522 5.54621 17.4849 5.68494 17.6416C5.96196 17.9546 6.375 18.3668 6.9293 18.7781C8.04166 19.6034 9.72592 20.4258 12 20.4258C14.2741 20.4258 15.9583 19.6034 17.0707 18.7781C17.625 18.3668 18.038 17.9546 18.3151 17.6416C18.4538 17.4849 18.5591 17.3522 18.6317 17.2558C18.668 17.2076 18.6962 17.1684 18.7163 17.1396C18.7264 17.1252 18.7345 17.1135 18.7405 17.1045L18.7481 17.0932L18.7508 17.0892L18.7527 17.0862C18.8325 16.9642 18.875 16.8216 18.875 16.6758V11.6808L12.6946 14.3534C12.2514 14.5451 11.7486 14.5451 11.3054 14.3534L5.125 11.6808Z"
+                    fill="#323544"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                In irure elit adipisicing excepteur.Veniam est magna consequat
+                laborum aliqua ad sunt amet dolore quis dolore voluptate.Magna
+                duis nulla sint ea incididunt in laboris.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7023 4.05965C11.8923 3.97751 12.1077 3.97751 12.2977 4.05965L21.5477 8.05965C21.8222 8.17838 22 8.44891 22 8.74805V15.4688C22 15.883 21.6642 16.2188 21.25 16.2188C20.8358 16.2188 20.5 15.883 20.5 15.4688V9.88949L12.2977 13.4355C12.1077 13.5177 11.8923 13.5177 11.7023 13.4355L2.45233 9.43555C2.17795 9.31675 2 9.04707 2 8.74805C2 8.44891 2.17775 8.17838 2.45232 8.05965L11.7023 4.05965Z"
+                    fill="#323544"
+                  />
+                  <path
+                    d="M5.125 11.6808V16.6758C5.125 16.8216 5.16749 16.9642 5.24727 17.0862C5.24727 17.0862 5.24694 17.0857 5.24814 17.0875L5.2492 17.0892L5.25188 17.0932L5.25947 17.1045C5.26553 17.1135 5.27359 17.1252 5.28365 17.1396C5.30378 17.1684 5.33196 17.2076 5.36827 17.2558C5.44085 17.3522 5.54621 17.4849 5.68494 17.6416C5.96196 17.9546 6.375 18.3668 6.9293 18.7781C8.04166 19.6034 9.72592 20.4258 12 20.4258C14.2741 20.4258 15.9583 19.6034 17.0707 18.7781C17.625 18.3668 18.038 17.9546 18.3151 17.6416C18.4538 17.4849 18.5591 17.3522 18.6317 17.2558C18.668 17.2076 18.6962 17.1684 18.7163 17.1396C18.7264 17.1252 18.7345 17.1135 18.7405 17.1045L18.7481 17.0932L18.7508 17.0892L18.7527 17.0862C18.8325 16.9642 18.875 16.8216 18.875 16.6758V11.6808L12.6946 14.3534C12.2514 14.5451 11.7486 14.5451 11.3054 14.3534L5.125 11.6808Z"
+                    fill="#323544"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                In irure elit adipisicing excepteur.Veniam est magna consequat
+                laborum aliqua ad sunt amet dolore quis dolore voluptate.Magna
+                duis nulla sint ea incididunt in laboris.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7023 4.05965C11.8923 3.97751 12.1077 3.97751 12.2977 4.05965L21.5477 8.05965C21.8222 8.17838 22 8.44891 22 8.74805V15.4688C22 15.883 21.6642 16.2188 21.25 16.2188C20.8358 16.2188 20.5 15.883 20.5 15.4688V9.88949L12.2977 13.4355C12.1077 13.5177 11.8923 13.5177 11.7023 13.4355L2.45233 9.43555C2.17795 9.31675 2 9.04707 2 8.74805C2 8.44891 2.17775 8.17838 2.45232 8.05965L11.7023 4.05965Z"
+                    fill="#323544"
+                  />
+                  <path
+                    d="M5.125 11.6808V16.6758C5.125 16.8216 5.16749 16.9642 5.24727 17.0862C5.24727 17.0862 5.24694 17.0857 5.24814 17.0875L5.2492 17.0892L5.25188 17.0932L5.25947 17.1045C5.26553 17.1135 5.27359 17.1252 5.28365 17.1396C5.30378 17.1684 5.33196 17.2076 5.36827 17.2558C5.44085 17.3522 5.54621 17.4849 5.68494 17.6416C5.96196 17.9546 6.375 18.3668 6.9293 18.7781C8.04166 19.6034 9.72592 20.4258 12 20.4258C14.2741 20.4258 15.9583 19.6034 17.0707 18.7781C17.625 18.3668 18.038 17.9546 18.3151 17.6416C18.4538 17.4849 18.5591 17.3522 18.6317 17.2558C18.668 17.2076 18.6962 17.1684 18.7163 17.1396C18.7264 17.1252 18.7345 17.1135 18.7405 17.1045L18.7481 17.0932L18.7508 17.0892L18.7527 17.0862C18.8325 16.9642 18.875 16.8216 18.875 16.6758V11.6808L12.6946 14.3534C12.2514 14.5451 11.7486 14.5451 11.3054 14.3534L5.125 11.6808Z"
+                    fill="#323544"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                In irure elit adipisicing excepteur.Veniam est magna consequat
+                laborum aliqua ad sunt amet dolore quis dolore voluptate.Magna
+                duis nulla sint ea incididunt in laboris.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7023 4.05965C11.8923 3.97751 12.1077 3.97751 12.2977 4.05965L21.5477 8.05965C21.8222 8.17838 22 8.44891 22 8.74805V15.4688C22 15.883 21.6642 16.2188 21.25 16.2188C20.8358 16.2188 20.5 15.883 20.5 15.4688V9.88949L12.2977 13.4355C12.1077 13.5177 11.8923 13.5177 11.7023 13.4355L2.45233 9.43555C2.17795 9.31675 2 9.04707 2 8.74805C2 8.44891 2.17775 8.17838 2.45232 8.05965L11.7023 4.05965Z"
+                    fill="#323544"
+                  />
+                  <path
+                    d="M5.125 11.6808V16.6758C5.125 16.8216 5.16749 16.9642 5.24727 17.0862C5.24727 17.0862 5.24694 17.0857 5.24814 17.0875L5.2492 17.0892L5.25188 17.0932L5.25947 17.1045C5.26553 17.1135 5.27359 17.1252 5.28365 17.1396C5.30378 17.1684 5.33196 17.2076 5.36827 17.2558C5.44085 17.3522 5.54621 17.4849 5.68494 17.6416C5.96196 17.9546 6.375 18.3668 6.9293 18.7781C8.04166 19.6034 9.72592 20.4258 12 20.4258C14.2741 20.4258 15.9583 19.6034 17.0707 18.7781C17.625 18.3668 18.038 17.9546 18.3151 17.6416C18.4538 17.4849 18.5591 17.3522 18.6317 17.2558C18.668 17.2076 18.6962 17.1684 18.7163 17.1396C18.7264 17.1252 18.7345 17.1135 18.7405 17.1045L18.7481 17.0932L18.7508 17.0892L18.7527 17.0862C18.8325 16.9642 18.875 16.8216 18.875 16.6758V11.6808L12.6946 14.3534C12.2514 14.5451 11.7486 14.5451 11.3054 14.3534L5.125 11.6808Z"
+                    fill="#323544"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                In irure elit adipisicing excepteur.Veniam est magna consequat
+                laborum aliqua ad sunt amet dolore quis dolore voluptate.Magna
+                duis nulla sint ea incididunt in laboris.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq container section">
+        <h2 class="title">FAQ</h2>
+        <h2 class="faq__title">Frequently asked questions</h2>
+        <p class="faq__description">
+          Dolore sunt deserunt incididunt consectetur mollit proident Lorem sint
+          sit laborum.Sit commodo minim duis in esse minim ullamco est
+          adipisicing commodo.Eu duis commodo excepteur culpa.
+        </p>
+        <div class="faq__container">
+          <div class="faq__box faq__box-0margin">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Amet sunt irure non reprehenderit dolore et esse minim voluptate
+              consectetur officia. Duis deserunt pariatur eu proident aliqua
+              esse nisi dolor sunt. In pariatur ea duis elit pariatur sunt
+              veniam dolor do non.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cta container section">
+        <img
+          src="./public/cta.png"
+          alt="Guy knealing down"
+          width="1020"
+          height="1407"
+          class="cta__img"
+        />
+        <h2 class="cta__title">You have decided upon your purpose.</h2>
+        <p class="cta__description">
+          Slay the dragon - get the treasure, that's how it works. But first you
+          must prepare. Start learning and become an expert front-end,
+          full-stack jamstack web developer.
+        </p>
+        <a href="#" class="cta__btn btn"
+          >Enter app
+          <svg
+            aria-hidden="true"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="cta__arrow"
+          >
+            <path
+              d="M21.0791 12.519C21.0744 12.7044 21.0013 12.8884 20.8599 13.0299L14.8639 19.0301C14.5711 19.3231 14.0962 19.3233 13.8032 19.0305C13.5103 18.7377 13.5101 18.2629 13.8029 17.9699L18.5233 13.2461L4.32813 13.2461C3.91391 13.2461 3.57813 12.9103 3.57812 12.4961C3.57812 12.0819 3.91391 11.7461 4.32812 11.7461L18.5158 11.7461L13.8029 7.03016C13.5101 6.73718 13.5102 6.2623 13.8032 5.9695C14.0962 5.6767 14.5711 5.67685 14.8639 5.96984L20.813 11.9228C20.976 12.0603 21.0795 12.2661 21.0795 12.4961C21.0795 12.5038 21.0794 12.5114 21.0791 12.519Z"
+              fill="#323544"
+            />
+          </svg>
+        </a>
+      </section>
+    </main>
+    <footer class="container section">
+      <p class="footer__description">~Slaying the dragon~</p>
+    </footer>
+  </body>
+</html>
